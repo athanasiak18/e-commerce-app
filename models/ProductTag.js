@@ -14,20 +14,19 @@ ProductTag.init(
     },
     product_id: {
       type: DataTypes.INTEGER,
-        }
+      
     },
     tag_id: {
-      type: DataTypes.INTEGER,
-
-        }
+      type:DataTypes.INTEGER
     }
+
   },
   {
     sequelize,
     timestamps: false,
+    freezeTableName: true,
     underscored: true,
     modelName: 'product_tag',
-    freezeTableName: true
   }
 );
 
